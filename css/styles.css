@@ -5,6 +5,8 @@
 body {
     margin: 0;
     background-color: #000;
+    color: #fff;
+    font-family: "Anek Devanagari", sans-serif;
 }
 
 /* Header principal */
@@ -18,13 +20,11 @@ body {
     align-items: center;
     /* background-color: #000; */
     /* box-shadow: 0 0 25px 0 #ffffff98; */
-    font-family: "Anek Devanagari", sans-serif;
-    color: #fff;
 }
 
 .header_principal_logo {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -153,8 +153,6 @@ body {
 #typing-text{
     display: inline;
     font-size: 48px;
-    font-family: "Anek Devanagari", sans-serif;
-    color: #fff;
     font-weight: 800;
 }
 #cursor {
@@ -167,3 +165,40 @@ body {
     50% { color: #61dafb; }
 }
 
+/* Procesadores */
+.animacion{
+    position: relative;
+    top: -90px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.animacion > p{
+    text-align: center;
+}
+.procesadores_procesador{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0 20px;
+}
+.procesadores_procesador_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.procesadores_procesador_img > img{
+    width: 50%;
+}
+#particles-js {
+    position: absolute;
+    top: 0;
+    z-index: 4000;   
+    width: 100vw;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
