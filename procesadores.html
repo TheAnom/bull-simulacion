@@ -10,14 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
     <title>Document</title>
 </head>
 
 <body>
 
-    <header class="header_principal">
+    <header class="header_principal" id="header">
 
         <div class="header_principal_logo">
             <img src="/assets/img/logo-empresa.svg" alt="logo-bulls">
@@ -33,53 +31,153 @@
 
     <div id="particles-js"></div>
 
-    <aside class="animacion" >
+    <aside class="animacion">
 
         <h2>SnapBulls</h2>
-        <p>La mejor familia de procesadores con gran rendimiento, innovación, velocidad, fuerza y lo más importante...<br> una gran experiancia para el usuario. SnapBulls... Lo mejor de lo mejor.</p>
+        <p>La mejor familia de procesadores con gran rendimiento, innovación, velocidad, fuerza y lo más
+            importante...<br> una gran experiencia para el usuario. <span class="snapbulls">SnapBulls</span>... Lo mejor
+            de lo mejor.</p>
+        <div class="contenedorbotonessnap">
+            <a href="./index.html" class="snapbullsentrar">Inicio</a>
+            <a href="#procesador1" class="snapbullsentrar">¡Vamos!</a>
+        </div>
     </aside>
 
     <main class="procesadores">
 
-        <div class="procesadores_procesador">
+        <div class="procesadores_procesador" id="procesador1">
             <div class="procesadores_procesador_img">
                 <img src="/assets/img/procesador0.1.png" alt="">
             </div>
 
             <div class="procesadores_procesador_textos">
                 <h2>SnapBull Idyllic</h2>
-                <p>El ProcesoMax X9 es un procesador de 16 núcleos y 32 hilos, diseñado para tareas intensivas. Con una velocidad de hasta 5.2 GHz y tecnología TurboBoost AI, ofrece un rendimiento potente y eficiente. Compatible con PCIe 5.0 y DDR5, es ideal para profesionales que necesitan máxima productividad.</p>
-                <a href="#">Ver más</a>
+                <p>El Procesador <b>SnapBull Idyllic</b> es un procesador de 8 núcleos y 16 hilos, diseñado para tareas de casa como tareas básicas y cotidianas. Con una
+                    velocidad de hasta 3.5 GHz y graficos integrados, ofrece un rendimiento potente y eficiente.
+                    Compatible con PCIe 5.0 y DDR5, es ideal para jovenes o adultos que estan aprendiendo y estudiando.</p>
+                <a href="#procesor2" class="boton_procesadores">Siguiente<span></span></a>
             </div>
         </div>
-        <div class="procesadores_procesador">
+        <div class="procesadores_procesador" id="procesor2">
             <div class="procesadores_procesador_img">
                 <img src="/assets/img/procesador0.2.png" alt="procesador1">
             </div>
 
             <div class="procesadores_procesador_textos">
                 <h2>SnapBull Xenom</h2>
-                <p>El ProcesoMax X9 es un procesador de 16 núcleos y 32 hilos, diseñado para tareas intensivas. Con una velocidad de hasta 5.2 GHz y tecnología TurboBoost AI, ofrece un rendimiento potente y eficiente. Compatible con PCIe 5.0 y DDR5, es ideal para profesionales que necesitan máxima productividad.</p>
-                <a href="">Ver más</a>
+                <p>El Procesador <b>Xenom</b> es un procesador de 8 núcleos y 32 hilos, diseñado para tareas intensivas, como Desarrollo de software o Diseño. Con una
+                    velocidad de hasta 8 GHz y tecnología TurboBoost AI, ofrece un rendimiento potente y eficiente.
+                    Compatible con PCIe 5.0 y DDR5, DDR6 es ideal para profesionales que necesitan máxima eficiencia.</p>
+                <a href="#procesor3" class="boton_procesadores">Siguiente<span></span></a>
             </div>
         </div>
-        <div class="procesadores_procesador">
+        <div class="procesadores_procesador" id="procesor3">
             <div class="procesadores_procesador_img">
                 <img src="/assets/img/procesador0.3.png" alt="procesador2">
             </div>
 
             <div class="procesadores_procesador_textos">
                 <h2>SnapBull Hydra</h2>
-                <p>El ProcesoMax X9 es un procesador de 16 núcleos y 32 hilos, diseñado para tareas intensivas. Con una velocidad de hasta 5.2 GHz y tecnología TurboBoost AI, ofrece un rendimiento potente y eficiente. Compatible con PCIe 5.0 y DDR5, es ideal para profesionales que necesitan máxima productividad.</p>
-                <a href="">Ver más</a>
+                <p>El Procesador <b>Hydra Ultra</b> es un procesador de 16 núcleos y 64 hilos, diseñado para tareas intensivas y super desarrollo, para tareas como desarrollo de IA, Programación, Diseño, Arquitectura, Ingeniería y más. Con una
+                    velocidad de hasta 16 GHz y tecnología TurboBoost AIx2, ofrece un rendimiento potente y eficiente.
+                    Compatible con PCIe 5.0 y DDR5, DDR6 es ideal para profesionales que necesitan máxima productividad e ir más alla de los límites.</p>
+                <a href="#header" class="boton_procesadores">Siguiente<span></span></a>
             </div>
         </div>
 
 
     </main>
+    <footer class="footer_principal">
+        Bulls Inc
+        Copyright 2024 - Universidad Regional de Guatemala.
+    </footer>
 
 
     <script src="/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#00bfff", "#ff007f", "#ffbf00"]
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true
+                },
+                "size": {
+                    "value": 10,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": false
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 
 </body>
 

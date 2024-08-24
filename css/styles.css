@@ -7,6 +7,7 @@ body {
     background-color: #000;
     color: #fff;
     font-family: "Anek Devanagari", sans-serif;
+
 }
 
 /* Header principal */
@@ -43,7 +44,8 @@ body {
     border-radius: 50%;
 
 }
-.header_principal_comprar > a{
+
+.header_principal_comprar>a {
     width: inherit;
     height: inherit;
     display: flex;
@@ -70,7 +72,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 70%;
+    width: 30%;
     height: inherit;
     list-style: none;
     margin: 0 auto;
@@ -85,10 +87,11 @@ body {
     border-radius: 50%;
 
 }
-.lista_element_bar_img{
+
+.lista_element_bar_img {
     background-color: #fff;
-    width: inherit;
-    height: inherit;
+    width: 60px;
+    height: 60px;
 
     display: flex;
     align-items: center;
@@ -97,12 +100,20 @@ body {
     border-radius: inherit;
 
 }
-.lista_element_bar_img:hover{
+
+.lista_element_bar_img:hover {
     cursor: pointer;
     transform: translateY(-10px);
     transition: transform 0.5s ease;
 }
-.lista_element_bar_img>img {
+.bar_img_enlace{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bar_img_enlace>img {
     width: 50px;
     height: 50px;
 }
@@ -130,12 +141,16 @@ body {
     filter: brightness(1.45);
     filter: drop-shadow(0 0 50px #dedede);
 }
+
 #follow-image {
-    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1); /* Transición más suave */
-    pointer-events: none; /* Hace que la imagen no interfiera con los eventos del mouse */
+    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Transición más suave */
+    pointer-events: none;
+    /* Hace que la imagen no interfiera con los eventos del mouse */
 }
+
 /* Simulacion de texto */
-.texto_contenedor{
+.texto_contenedor {
     /* background-color: rgba(255, 0, 0, 0.518); */
     position: absolute;
     width: 100%;
@@ -143,62 +158,239 @@ body {
     top: 0;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
 
 /* Simulacion de tipeo */
 .typewriter {
     font-size: 48px;
 }
-#typing-text{
+
+#typing-text {
     display: inline;
     font-size: 48px;
     font-weight: 800;
 }
+
 #cursor {
     font-weight: bold;
     animation: blink 0.7s step-end infinite;
 }
 
 @keyframes blink {
-    from, to { color: transparent; }
-    50% { color: #61dafb; }
+
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: #61dafb;
+    }
 }
 
 /* Procesadores */
-.animacion{
+.procesadores {
+    padding: 20px;
+}
+.procesadores_procesador_textos > h2{
+    font-size: 48px;
+}
+.animacion {
     position: relative;
     top: -90px;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.animacion > p{
-    text-align: center;
+
+.animacion>h2 {
+    font-size: 48px;
 }
-.procesadores_procesador{
+
+.animacion>p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.procesadores_procesador {
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 0 20px;
 }
-.procesadores_procesador_img{
+
+.procesadores_procesador_img {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.procesadores_procesador_img > img{
-    width: 50%;
+
+.procesadores_procesador_img>img {
+    width: 40%;
 }
+
 #particles-js {
     position: absolute;
     top: 0;
-    z-index: 4000;   
-    width: 100vw;
-    height: 100vh;
-    background-color: #1a1a1a;
+    height: 100%;
+}
+
+.snapbulls {
+    color: #00bfff;
+    font-weight: 800;
+}
+.contenedorbotonessnap{
+    display: flex;
+    gap: 50px;
+}
+.snapbullsentrar {
+    width: 120px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 4px solid #ff007f;
+    color: #ff007f;
+}
+
+.snapbullsentrar:hover {
+    filter: drop-shadow(0 0 5px #ffbf00);
+}
+
+/* Tarjeta de los procesadores */
+.procesadores_procesador_img>img {
+    animation-name: flotantesprocesadores;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.boton_procesadores {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px 0;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    border: 3px solid #fff;
+    color: #fff;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.boton_procesadores>span {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 0%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.50s ease;
+}
+
+.boton_procesadores:hover > span {
+    width: 100%;
+}
+.boton_procesadores:hover{
+    color: #000;
+}
+
+@keyframes flotantesprocesadores {
+    50% {
+        transform: translateY(6px);
+        filter: drop-shadow(0 0 20px #dedede);
+    }
+}
+
+/*Footer de todas paginas*/
+.footer_principal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+}
+
+/* Main  */
+.main_nosotros{
+    position: relative;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 80vh;
+    width: 95%;
+    margin: 0 auto;
+}
+.tarjeta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.tarjeta-1{
+    background-image: url("/assets/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tarjeta-1 > h2{
+    position: relative;
+    z-index: 10;
+    font-size: 48px;
+}
+.tarjeta_contenedor_textos > h2{
+    position: relative;
+    z-index: 10;
+    font-size: 48px;
+}
+.tarjeta-1 > p{
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+}
+.tarjeta_contenedor_textos > p{
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+}
+.tarjeta_1_glass{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: rgb(0,0,0);background: linear-gradient(90deg, rgba(0,0,0,0.9220938375350141) 9%, rgba(42,42,62,0.7036064425770308) 49%, rgba(0,0,0,0.9136904761904762) 91%);
+}
+.tarjeta_boton{
+    margin: 60px 20px;
+}
+.tarjeta-2, .tarjeta-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.tarjeta-2 > img{
+    width: 100%;
+    height: 100%;
+}
+.tarjeta-3 > img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Diseños Responsivos */
+
+/* Celular */
+@media screen and (max-width: 767px) {
+    
 }
