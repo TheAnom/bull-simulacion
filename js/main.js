@@ -1,6 +1,6 @@
 const texts = [
     "Procesadores SnapBulls",
-    "Somos Rendimiento, Innovación, somos...",
+    "Somos Rendimiento e Innovación",
     "Lo mejor que sea creado."
 ];
 const image = document.getElementById('follow-image');

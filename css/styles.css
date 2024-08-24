@@ -277,7 +277,7 @@ body {
     display: block;
     text-decoration: none;
     border-radius: 15px;
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     width: 160px;
     height: 60px;
@@ -381,7 +381,7 @@ body {
 }
 .tarjeta-2 > img{
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .tarjeta-3 > img{
     width: 100%;
@@ -392,5 +392,82 @@ body {
 
 /* Celular */
 @media screen and (max-width: 767px) {
+
+    .procesador_contenedor>img {
+        width: 70%;
+    }
+
+    #typing-text {
+        font-size: 24px;
+    }
+    .typewriter {
+        font-size: 36px;
+    }
     
+    .barra_lista {
+        width: 75%;
+    }
+
+    .procesadores_procesador {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .procesadores_procesador_textos > h2{
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    .procesadores_procesador_textos{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tarjeta-1 > h2{
+        font-size: 28px;
+    }
+    .tarjeta-1 > p{
+        font-size: 13px;
+    }
+    .tarjeta_contenedor_textos > p{
+        font-size: 14px;
+    }
+    .boton_procesadores {
+        width: 100px;
+        height: 50px;
+        padding: 12px;
+    }
+    .tarjeta_boton{
+        margin: 20px 5px;
+    }
+    .tarjeta_contenedor_textos > h2{
+        font-size: 24px;
+        margin: 0;
+    }
+    .tarjeta-2, .tarjeta-3{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .tarjeta-2 > img{
+        width: 50%;
+        height: 40%;
+        box-shadow: -5px 5px 0px 0 #fff;
+    }
+    .tarjeta-3 > img{
+        width: 100%;
+        height: 100%;
+    }
+    .barra_navegacion{
+        bottom: 5px;
+    }
+    .tarjeta_contenedor_textos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tarjeta_contenedor_textos > p{
+        font-size: 13px;
+    }
 }
